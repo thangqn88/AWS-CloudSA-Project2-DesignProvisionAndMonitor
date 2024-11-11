@@ -1,0 +1,24 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,6000.07,72000.84,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Reduced_Cost_Estimate,US East (N. Virginia),AWS Route 53,Amazon Route 53,0,481.75,5781.00,USD,,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (5)"
+Reduced_Cost_Estimate,US East (N. Virginia),,Amazon EC2 ,0,1812.664,21751.97,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (t3.large), Pricing strategy (Standard Reserved Instances 1yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0.00,USD,,
+Reduced_Cost_Estimate,US East (N. Virginia),,S3 Standard,0,23,276.00,USD,,S3 Standard storage (1000 GB per month)
+Reduced_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
+Reduced_Cost_Estimate,US East (N. Virginia),,Application Load Balancer,0,133.23,1598.76,USD,,Number of Application Load Balancers (1)
+Reduced_Cost_Estimate,US East (N. Virginia),,Network Load Balancer,0,892.43,10709.16,USD,,"Number of Network Load Balancers (1), Average number of new TCP connections (500 per second), Processed bytes per NLB for TCP (100 GB per hour), Processed bytes per NLB for TLS (100 GB per hour), Average number of new TLS connections (10 per second), Average TLS connection duration (30 seconds)"
+Reduced_Cost_Estimate,US East (N. Virginia),,VPN Connection,0,275,3300.00,USD,,Working days per month (22)
+Reduced_Cost_Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,0,0.00,USD,,
+Reduced_Cost_Estimate,US East (N. Virginia),,Amazon CloudWatch,0,0,0.00,USD,,
+Reduced_Cost_Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,2382,28584.00,USD,,"Storage amount (100 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+
+
+EC2 pricing strategy changed from on-demand to 1-year reserved instances for all,
+Route 53 changed number of Elastic Network Instances from 10 to 5 and reduced number of basic checks,
+Network Load Balancer - reduces number of processed GB per month (NLB for TCP)

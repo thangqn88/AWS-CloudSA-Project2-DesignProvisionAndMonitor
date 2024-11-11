@@ -1,0 +1,32 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,15309.559999999998,183714.72,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Increased_Cost_Estimate,US East (N. Virginia),AWS Route 53,Amazon Route 53,0,938,11256.00,USD,,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon EC2 ,0,2490.068,29880.82,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 12), Advance EC2 instance (t3.xlarge), Pricing strategy ( 1yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (30 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon CloudFront,0,0,0.00,USD,,
+Increased_Cost_Estimate,US East (N. Virginia),,S3 Standard,0,23,276.00,USD,,S3 Standard storage (1000 GB per month)
+Increased_Cost_Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,1.25,15.00,USD,,S3 Standard-IA storage (100 GB per month)
+Increased_Cost_Estimate,US East (N. Virginia),,S3 Glacier Instant Retrieval,0,0.4,4.80,USD,,S3 Glacier Instant Retrieval storage (100 GB per month)
+Increased_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
+Increased_Cost_Estimate,US East (N. Virginia),,Application Load Balancer,0,483.63,5803.56,USD,,Number of Application Load Balancers (1)
+Increased_Cost_Estimate,US East (N. Virginia),,Network Load Balancer,0,2644.43,31733.16,USD,,"Number of Network Load Balancers (1), Average number of new TCP connections (500 per second), Processed bytes per NLB for TCP (500 GB per hour), Processed bytes per NLB for TLS (100 GB per hour), Average number of new TLS connections (10 per second), Average TLS connection duration (30 seconds)"
+Increased_Cost_Estimate,US East (N. Virginia),,VPN Connection,0,275,3300.00,USD,,Working days per month (22)
+Increased_Cost_Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,0,0.00,USD,,
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon CloudWatch,0,153.4002,1840.80,USD,,"Number of Metrics (includes detailed and custom metrics) (20), GetMetricData: Number of metrics requested (20), Standard Logs: Data Ingested (100 GB), Logs Delivered to CloudWatch Logs: Data Ingested (100 GB), Logs Delivered to S3: Data Ingested (100 GB), Expected Logs Data scanned (100 GB), Number of Dashboards (10)"
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4671.32,56055.84,USD,,"Storage amount (500 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+Increased_Cost_Estimate,US East (N. Virginia),,AWS Web Application Firewall (WAF),0,1350,16200.00,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (10 per month), Number of Rules added per Web ACL (10 per month), Number of Rule Groups per Web ACL (10 per month), Number of Rules inside each Rule Group (10 per month), Number of Managed Rule Groups per Web ACL (10 per month)"
+Increased_Cost_Estimate,US East (N. Virginia),,Amazon ElastiCache,0,2279.06,27348.72,USD,,"Nodes (0), Instance type (cache.r6gd.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand), Instance type (cache.m5.xlarge), Cache Engine (Redis), Nodes (2), Utilization (On-Demand only) (100 %Utilized/Month), Cache Node Type (Standard), Pricing strategy (OnDemand), Average cache data size (in GB) (20), Average simple request rate (500 per second)"
+
+
+
+EC2 - increased to t3.xlarge and increase total instances from 8 to 12,
+MySQL database - increased to db.m4.4xlarge,
+ElasticCache - Added to improve system performance,
+Route 53 - increased number of Elastic Network Instances from 5 to 10,
+CouldWatch - increased number of logs and metrics,
+Web Application Firewall- added web application firewall to help system more secure,
